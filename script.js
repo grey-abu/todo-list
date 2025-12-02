@@ -1,9 +1,9 @@
-// app.js
+
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 const form = document.getElementById('task-form');
 const input = document.getElementById('task-input');
 const list = document.getElementById('task-list');
-const deleteAllButton = document.getElementById('delete-all-btn'); // New element
+const deleteAllButton = document.getElementById('delete-all-btn'); 
 
 const saveTasks = () => localStorage.setItem('tasks', JSON.stringify(tasks));
 
@@ -82,5 +82,6 @@ form.addEventListener('submit', (e) => {
 if (deleteAllButton) {
     deleteAllButton.addEventListener('click', deleteAllTasks);
 }
+
 
 renderTasks();
