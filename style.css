@@ -1,16 +1,15 @@
-/* style.css (Desain Modern Minimalis) */
-/* Palet Warna Baru */
+
 :root {
     --p: #0081A7;
-    /* Biru Teal yang kalem (Primary) */
+    
     --b: #F7F7F7;
-    /* Background Sangat Terang */
+
     --d: #D62828;
-    /* Merah Muted (Danger) */
+    
     --w: #FCA311;
-    /* Kuning Emas (Warning) */
+    
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-    /* Bayangan Lembut */
+   
 }
 
 * {
@@ -95,7 +94,7 @@ h1 {
     border-radius: 8px;
     margin-bottom: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    /* Bayangan lebih kecil */
+    
     transition: .3s;
 }
 
@@ -104,7 +103,7 @@ h1 {
     transform: translateY(-2px);
 }
 
-/* Efek terangkat saat hover */
+
 
 .task-text {
     flex-grow: 1;
@@ -152,7 +151,7 @@ h1 {
 /* Tombol Hapus Semua */
 #delete-all-btn {
     background: #6c757d;
-    /* Warna abu-abu netral */
+    
     color: white;
     border: 0;
     padding: 12px 20px;
