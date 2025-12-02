@@ -1,0 +1,169 @@
+/* style.css (Desain Modern Minimalis) */
+/* Palet Warna Baru */
+:root {
+    --p: #0081A7;
+    /* Biru Teal yang kalem (Primary) */
+    --b: #F7F7F7;
+    /* Background Sangat Terang */
+    --d: #D62828;
+    /* Merah Muted (Danger) */
+    --w: #FCA311;
+    /* Kuning Emas (Warning) */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    /* Bayangan Lembut */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: 100%/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 15px;
+    min-height: 100vh;
+}
+
+/* Judul */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--p);
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Form & Input */
+#task-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    background: #FFF;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#task-input:focus {
+    border-color: var(--p);
+}
+
+#task-form button {
+    padding: 12px 18px;
+    background: var(--p);
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+#task-form button:hover {
+    background: #006d8b;
+}
+
+/* List Tugas */
+#task-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Bayangan lebih kecil */
+    transition: .3s;
+}
+
+#task-list li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Efek terangkat saat hover */
+
+.task-text {
+    flex-grow: 1;
+    font-size: 1.1em;
+    padding-right: 15px;
+    color: #333;
+    cursor: pointer;
+}
+
+.task-text small {
+    display: block;
+    font-size: 0.75em;
+    color: #A0A0A0;
+}
+
+/* Status Selesai */
+#task-list li.completed {
+    background: #E9F5F9;
+    opacity: .7;
+}
+
+#task-list li.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Tombol Aksi */
+#task-list button {
+    padding: 8px 12px;
+    margin-left: 8px;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: var(--w);
+}
+
+.delete-btn {
+    background: var(--d);
+}
+
+/* Tombol Hapus Semua */
+#delete-all-btn {
+    background: #6c757d;
+    /* Warna abu-abu netral */
+    color: white;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    font-weight: 600;
+}
+
+#delete-all-btn:hover {
+    background: #5a6268;
+}
